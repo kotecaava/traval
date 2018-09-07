@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		0DB00A5D21428A7700E2A016 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB00A5C21428A7700E2A016 /* AppDelegate.swift */; };
-		0DB00A5F21428A7700E2A016 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB00A5E21428A7700E2A016 /* ViewController.swift */; };
 		0DB00A6221428A7700E2A016 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB00A6021428A7700E2A016 /* Main.storyboard */; };
 		0DB00A6421428A7900E2A016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DB00A6321428A7900E2A016 /* Assets.xcassets */; };
 		0DB00A6721428A7900E2A016 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DB00A6521428A7900E2A016 /* LaunchScreen.storyboard */; };
+		0DB00A7C21428CC400E2A016 /* ListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB00A7B21428CC400E2A016 /* ListScreen.swift */; };
+		7748B5FD96BE6375C5C9E80A /* Pods_traval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 560829406A4FBCC35D65B214 /* Pods_traval.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0DB00A5921428A7700E2A016 /* traval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = traval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DB00A5C21428A7700E2A016 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0DB00A5E21428A7700E2A016 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0DB00A6121428A7700E2A016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0DB00A6321428A7900E2A016 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DB00A6621428A7900E2A016 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DB00A6821428A7900E2A016 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DB00A7B21428CC400E2A016 /* ListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListScreen.swift; sourceTree = "<group>"; };
+		560829406A4FBCC35D65B214 /* Pods_traval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_traval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		617EB5445545C5460E5625B0 /* Pods-traval.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traval.debug.xcconfig"; path = "Pods/Target Support Files/Pods-traval/Pods-traval.debug.xcconfig"; sourceTree = "<group>"; };
+		DCFAB685F71D2151F84A2948 /* Pods-traval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-traval.release.xcconfig"; path = "Pods/Target Support Files/Pods-traval/Pods-traval.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7748B5FD96BE6375C5C9E80A /* Pods_traval.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				0DB00A5B21428A7700E2A016 /* traval */,
 				0DB00A5A21428A7700E2A016 /* Products */,
+				22A145F6D9D6DE4EC3E033DF /* Pods */,
+				A60C6E5FC9667413F49C933D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +62,150 @@
 			isa = PBXGroup;
 			children = (
 				0DB00A5C21428A7700E2A016 /* AppDelegate.swift */,
-				0DB00A5E21428A7700E2A016 /* ViewController.swift */,
-				0DB00A6021428A7700E2A016 /* Main.storyboard */,
-				0DB00A6321428A7900E2A016 /* Assets.xcassets */,
-				0DB00A6521428A7900E2A016 /* LaunchScreen.storyboard */,
-				0DB00A6821428A7900E2A016 /* Info.plist */,
+				0DB00A6E21428B8600E2A016 /* Core */,
+				0DB00A6F21428B9600E2A016 /* Model */,
+				0DB00A7021428B9F00E2A016 /* View */,
+				0DB00A7121428BA400E2A016 /* Controller */,
+				0DB00A7221428BBA00E2A016 /* Resources */,
+				0DB00A7321428BCF00E2A016 /* SupportingFiles */,
 			);
 			path = traval;
+			sourceTree = "<group>";
+		};
+		0DB00A6E21428B8600E2A016 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A8021428D1000E2A016 /* Extensions */,
+				0DB00A7F21428D0800E2A016 /* Constants */,
+				0DB00A7E21428CFE00E2A016 /* Services */,
+				0DB00A7D21428CEA00E2A016 /* Animation */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		0DB00A6F21428B9600E2A016 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DB00A7021428B9F00E2A016 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A6521428A7900E2A016 /* LaunchScreen.storyboard */,
+				0DB00A6021428A7700E2A016 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0DB00A7121428BA400E2A016 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A7821428C8300E2A016 /* AccountScreen */,
+				0DB00A7721428C6A00E2A016 /* SavedScreen */,
+				0DB00A7621428C5A00E2A016 /* MapScreen */,
+				0DB00A7521428C4E00E2A016 /* ListScreen */,
+				0DB00A7421428C4800E2A016 /* Auth */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0DB00A7221428BBA00E2A016 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A6321428A7900E2A016 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0DB00A7321428BCF00E2A016 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A6821428A7900E2A016 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		0DB00A7421428C4800E2A016 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		0DB00A7521428C4E00E2A016 /* ListScreen */ = {
+			isa = PBXGroup;
+			children = (
+				0DB00A7B21428CC400E2A016 /* ListScreen.swift */,
+			);
+			path = ListScreen;
+			sourceTree = "<group>";
+		};
+		0DB00A7621428C5A00E2A016 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		0DB00A7721428C6A00E2A016 /* SavedScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SavedScreen;
+			sourceTree = "<group>";
+		};
+		0DB00A7821428C8300E2A016 /* AccountScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AccountScreen;
+			sourceTree = "<group>";
+		};
+		0DB00A7D21428CEA00E2A016 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Animation;
+			sourceTree = "<group>";
+		};
+		0DB00A7E21428CFE00E2A016 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		0DB00A7F21428D0800E2A016 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		0DB00A8021428D1000E2A016 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		22A145F6D9D6DE4EC3E033DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				617EB5445545C5460E5625B0 /* Pods-traval.debug.xcconfig */,
+				DCFAB685F71D2151F84A2948 /* Pods-traval.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A60C6E5FC9667413F49C933D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				560829406A4FBCC35D65B214 /* Pods_traval.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +215,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0DB00A6B21428A7900E2A016 /* Build configuration list for PBXNativeTarget "traval" */;
 			buildPhases = (
+				98188C6017AF615FA7339AEF /* [CP] Check Pods Manifest.lock */,
 				0DB00A5521428A7700E2A016 /* Sources */,
 				0DB00A5621428A7700E2A016 /* Frameworks */,
 				0DB00A5721428A7700E2A016 /* Resources */,
+				9D47E01F5BC1D373279C06F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +276,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		98188C6017AF615FA7339AEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-traval-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D47E01F5BC1D373279C06F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-traval/Pods-traval-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Persei/Persei.framework",
+				"${BUILT_PRODUCTS_DIR}/expanding-collection/expanding_collection.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Persei.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/expanding_collection.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-traval/Pods-traval-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0DB00A5521428A7700E2A016 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0DB00A5F21428A7700E2A016 /* ViewController.swift in Sources */,
 				0DB00A5D21428A7700E2A016 /* AppDelegate.swift in Sources */,
+				0DB00A7C21428CC400E2A016 /* ListScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,11 +469,12 @@
 		};
 		0DB00A6C21428A7900E2A016 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 617EB5445545C5460E5625B0 /* Pods-traval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCZPZBDHEE;
-				INFOPLIST_FILE = traval/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/traval/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,11 +488,12 @@
 		};
 		0DB00A6D21428A7900E2A016 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCFAB685F71D2151F84A2948 /* Pods-traval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DCZPZBDHEE;
-				INFOPLIST_FILE = traval/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/traval/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
